@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr=["h","e","l","l","o","w","o","r","l","d"]
+        let num=[]
+        arr.forEach(index=>{num[index]=(num[index])})
+        var ifAmtGreaterthan2000 = (n) => {
+    var h = 0;
+    var f = 0;
+    var t = 0;
+    var tt = 0;
+    var temp;
+    if (n < 2000) {
+        tt += (n / 2000);
+    }
+    else if (n >= 2000 && n < 10000) {
+        f += n / 500;
+        h += (n - 500) / 100;
+    }
+    else {
+        temp = n - 1500;
+        if (temp < 500) {
+            h += (temp / 100);
+        }
+        else {
+            f += 1;
+            h += (temp - 500) / 100;
+        }
+    }
+}
+ifAmtGreaterthan2000(2500)
+console.log(ifAmtGreaterthan2000)
+
+
+
+
+// // // var checkAmt = (n) => {
+// // //     if (n < 100 || (n % 100) > 0) {
+// // //         console.log("Invalid Amount : less than 100 ");
+// // //     } else {
+// // //         if (n > 20000) {
+// // //             console.log("ATM Cash Limit exceeds.");
+// // //         } else {
+// // //             if (n <= 2500) {
+// // //                 ifAmtLessThn2500(n);
+// // //                 console.log(h + " x 100");
+// // //                 console.log(f + " x 500");
+// // //             } else {
+// // //                 temp = n - 2500;
+// // //                 t += temp / 1000;
+// // //                 if (temp > 500)
+// // //                     temp = temp - (1000 * (t - 1));
+// // //                 ifAmtLessThn2500(temp);
+// // //                 console.log(h + " x 100");
+// // //                 console.log(f + " x 500");
+// // //                 console.log(t + " x 1000");
+// // //             }
+// // //         }
+// // //     }
+    
+// // }
+
+// checkAmt(2500);
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
